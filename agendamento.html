@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudioUnhas de Gata Nail Designer</title>
+  <link rel="stylesheet" href="https://www.tcastrounhas.com.br/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="https://www./img/logo.g" id="logo" />
+      <h1 style="color: #a020f0;">STUDIO UNHAS DE GATA NAIL DESIGNER</h1>
+
+      <div class="header-social">
+        <a href="https://www.instagram.com/gallegavipp6/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=+5571981299403" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="https://www.">Início</a></li>
+        <li><a href="https://www.">Agendamentos</a></li>
+        <li><a href="https://www.">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="agendamentos-section">
+    <h2 style="color: #a020f0; font-weight: bold;">Agendamento de Serviços</h2>
+    <h4>
+      Para agilizar seu atendimento e garantir a melhor experiência em nosso Studio Unhas de Gata,
+      pedimos que você escolha os procedimentos desejados, juntamente com o melhor dia e horário de
+      sua preferência. Assim, poderemos verificar a disponibilidade e confirmar seu agendamento o
+      mais rápido possível. Agradecemos pela sua compreensão e estamos ansiosos para atendê-lo!
+    </h4>
+    <form id="agendamento-form">
+      <div id="procedimentos-container">
+        <div class="procedimento-group">
+          <label for="procedimento">Selecione o Procedimento</label>
+          <select class="procedimento" name="procedimento">
+            <option value="">Selecione um procedimento</option>
+            <option value="Alongamento Molde f1">Alongamento Molde F1</option>
+            <option value="Alongamento De Fibra">Alongamento Fibra de vidro</option>
+            <option value="Alongamento Molde Russo">Alongamento molde russo</option>
+            <option value="Alongamento Nos Pes">Alongamento nos pés</option>
+            <option value="Blindagem">Blindagem</option>
+            <option value="Banho De Gel">Banho de gel</option>
+            <option value="Cuticulagem">Cuticulagem</option>
+            <option value="Esmaltação Em Gel">Esmaltação em gel</option>
+            <option value="Manutencao">Manutenção</option>
+            <option value="Manutencao Blindagem">Manutenção Blindagem</option>
+            <option value="Manicure">Manicure</option>
+            <option value="Manicure, Pedicure">Manicure/Pedicure</option>
+            <option value="Reposicao De Unha">Reposição de Unha</option>
+            <option value="Remocao de Alongamento">Remoção Alongamento</option>
+            <option value="Pedicure">Pedicure</option>
+          </select>
+          <div class="subtipo-container" style="display: none;">
+            <label for="subtipo">Selecione o Tipo de Alongamento</label>
+            <select class="subtipo" name="subtipo">
+              <option value="">Selecione um tipo</option>
+              <option value="Básico">Básico</option>
+              <option value="Decorado">Decorado</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+      <label for="data">Data Disponível</label>
+      <input type="date" id="data" name="data" required />
+
+      <label for="hora">Horário Disponível</label>
+      <input type="time" id="hora" name="hora" required />
+
+      <a
+        href="#"
+        class="btn-enviar"
+        style="
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: green;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        "
+      >
+        ENVIAR PARA WHATSAPP
+      </a>
+    </form>
+  </section>
+
+  <footer class="footer-section">
+    <div class="agendamento-container">
+      <div class="agendamento-content">
+        <div class="agendamento-text">
+          <h2>FAÇA UM AGENDAMENTO</h2>
+          <a href="https://www." class="btn-agendar"
+            >AGENDAR HORÁRIO</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-info">
+      <div class="footer-endereco">
+        <h3>ENDEREÇO</h3>
+        <p>Rua Goiania N°20 bairro Gravatá</p>
+        <p>Camaçari - BA</p>
+        <p><i class="fa fa-whatsapp"></i> (71) 98129-9403</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/gallegavipp6/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=+5571981299403">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="footer-logo"></div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector(".btn-enviar").addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const dataInput = document.getElementById("data").value;
+      const [ano, mes, dia] = dataInput.split("-");
+      const data = `${dia}/${mes}/${ano}`;
+      const hora = document.getElementById("hora").value;
+
+      const procedimentoSelect = document.querySelector(".procedimento");
+      const procedimento = procedimentoSelect.options[procedimentoSelect.selectedIndex].text;
+
+      const subtipoContainer = document.querySelector(".subtipo-container");
+      let subtipo = "";
+      if (subtipoContainer.style.display !== "none") {
+        const subtipoSelect = document.querySelector(".subtipo");
+        subtipo = subtipoSelect.options[subtipoSelect.selectedIndex].text;
+      }
+
+      let mensagem = `Olá! Gostaria de agendar:\n\n`;
+      mensagem += `📝 Nome: ${nome}\n📅 Data: ${data}\n⏰ Hora: ${hora}\n💅 Procedimento: ${procedimento}`;
+      if (subtipo) {
+        mensagem += `\n🎨 Tipo: ${subtipo}`;
+      }
+
+      const numero = "5571981299403";
+      const link = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`;
+
+      window.open(link, "_blank");
+    });
+  </script>
+</body>
+</html>
